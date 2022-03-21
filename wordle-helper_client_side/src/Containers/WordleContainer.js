@@ -18,7 +18,7 @@ const WordleContainer = () => {
         fetch("http://localhost:8080/helper/start")
         //do not need to be state
         // fetch("http://localhost:8080/helper/start/{words}");
-       
+
 
 
         //update variable in the path
