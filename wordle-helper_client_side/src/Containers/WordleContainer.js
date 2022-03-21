@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import WordList from "../Components/WordList";
+import SubmitForm from "../Components/SubmitForm";
 
 
 
@@ -30,6 +31,7 @@ const WordleContainer = () => {
     return (
         <>
             <WordList words={words} />
+            <SubmitForm/>
             
         </>
     )

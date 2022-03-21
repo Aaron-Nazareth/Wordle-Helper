@@ -7,13 +7,13 @@ import wordlehelper from './images/wordlehelper.png';
 function App() {
   return (
     <>
-    
-    <h1> <center> The Imitation Game </center>  </h1>
-    <img src={wordlehelper} className= "App-logo" alt="wordle logo"/>
-    <WordleContainer/>
-    
+
+      <h1> <center> The Imitation Game </center>  </h1>
+      <img src={wordlehelper} className="App-logo" alt="wordle logo" />
+      <WordleContainer />
+
     </>
-      
+
   )
 }
 
