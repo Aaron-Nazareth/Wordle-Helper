@@ -1,4 +1,6 @@
-import {useState} from "react";
+import { useState, useEffect } from "react";
+import WordList from "../Components/WordList";
+
 
 
 
@@ -6,8 +8,22 @@ import {useState} from "react";
 //setting our state
 const WordleContainer = () => {
 
-   
-//      const [words, setWords]=useState([])
+    const [words, setWords] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:8080/helper/start")
+            .then(response => response.json())
+            .then(data => setWords(data))
+    }, [])
+
+
+
+    return (
+        <>
+            <WordList words={words} />
+        </>
+    )
+
 }
 
 
