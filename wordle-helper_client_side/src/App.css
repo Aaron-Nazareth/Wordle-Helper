@@ -1,17 +1,87 @@
 
-.root{
+:root{
   --yellow: #c9b458;
   --green: #6aaa64;
   --gray: #86888a;
   --white: #fff;
+
+  --square-size: 150px;
+  --square-rad: 10px;
+  --spacing: 30px;
+  --text-size: 50px;
+
 }
 
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+
+}
 
 .App-logo{
 display: block; 
-margin-left: auto;
-margin-right: auto;
+margin: 0 auto ;
 width: 50%;
 
 }
 
+#grid{
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing);
+  flex-wrap: wrap;
+  background-color: grey;
+
+}
+
+
+
+#grid div{
+    display: inline-block;
+    height: var(--square-size);
+    width: var(--square-size);
+    border-radius: var(--square-rad);
+    text-align: center;
+    line-height: var(--square-size);
+    font-size: var(--text-size);
+    /* margin: var(--spacing); */
+    /* position: relative; */
+
+    /* styling */
+    background-color: violet;
+
+}
+
+#grid .green{
+  background-color: var(--green);
+
+}
+
+#grid .green{
+  background-color: var(--gray);
+
+}
+
+#grid .green{
+  background-color: green;
+
+}
+
+
+/* have all of them as a class grey and have a toggle features so when you submit it will get each state of each square this will change the state */
+/* some listener, apend, clear class and send data 
+onclick if it is grey- change to yellow then change class and set the state to yellow 
+on click change the state recognise by two things: 1. css 2.response to send to API  */
+/* on click change the colour to green/yellow/grey */
+/* each box will have an onClick to change to three colours this will cause   */
+
+/* #t0{
+  background-color: black;
+
+
+} */
