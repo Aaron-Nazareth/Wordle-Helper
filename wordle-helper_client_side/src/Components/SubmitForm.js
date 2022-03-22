@@ -59,7 +59,7 @@ const SubmitForm = ({onWordSubmission}) => {
     }
 
         return (
-            <form>
+            <form onSubmit={handleFormSubmit}>
             <label htmlFor="t0">t0:</label>
             <input type="text" id="t0" value={t0} onChange={handleT0Change} />
 

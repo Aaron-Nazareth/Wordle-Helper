@@ -17,21 +17,32 @@ const WordleContainer = () => {
     useEffect(() => {
         
         fetch("http://localhost:8080/helper/start")
-        //do not need to be state
+        //does not need to be state
+            .then(response => response.json())  // Strip data we want from response using json function
+            .then(data => setWords(data[0]))    // Set words array to be the first index of our data
+        
+        
         // fetch("http://localhost:8080/helper/start/{words}");
-
-
-
         //update variable in the path
-            .then(response => response.json())
-            .then(data => setWords(data))
     }, [])
+
+    const filterWordList = (newWordObject) => {
+        fetch(`http://localhost:8080/helper/start/${words.word}`, {
+            method: "DELETE",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newWordObject)
+        })
+            .then(response => response.json())  // Strip data we want from our response
+            .then(data => setWords(data[0])) // Update state for words array with first index filtered word that is new suggestion
+    }
     
 
     return (
         <>
-            <WordList words={words} />
-            <SubmitForm/>
+            <WordList word={words} />
+            <SubmitForm onWordSubmission={filterWordList}/>
             
         </>
     )
