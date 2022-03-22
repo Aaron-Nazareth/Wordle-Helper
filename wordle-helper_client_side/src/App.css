@@ -54,7 +54,6 @@ width: 50%;
 
     /* styling */
     background-color: violet;
-
 }
 
 #grid .green{
@@ -62,13 +61,13 @@ width: 50%;
 
 }
 
-#grid .green{
-  background-color: var(--gray);
+#grid .yellow{
+  background-color: var(--yellow);
 
 }
 
-#grid .green{
-  background-color: green;
+#grid .grey{
+  background-color: var(--gray);
 
 }
 

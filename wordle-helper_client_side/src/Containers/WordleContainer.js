@@ -26,8 +26,10 @@ const WordleContainer = () => {
         //update variable in the path
     }, [])
 
-    const filterWordList = (newWordObject) => {
-        fetch(`http://localhost:8080/helper/start/${words.word}`, {
+    const filterWordList = async (newWordObject) => {
+            console.log(words.word);
+            console.log(newWordObject);
+            const newWords = await fetch(`http://localhost:8080/helper/start/${words.word}`, {
             method: "DELETE",
             headers: {
                 'Content-Type': 'application/json'
@@ -35,14 +37,19 @@ const WordleContainer = () => {
             body: JSON.stringify(newWordObject)
         })
             .then(response => response.json())  // Strip data we want from our response
-            .then(data => setWords(data[0])) // Update state for words array with first index filtered word that is new suggestion
-    }
+            // .then(data => console.log(data[0])) // Update state for words array with first index filtered word that is new suggestion
+            console.log(newWords);
+            setWords(newWords[0]);
+            console.log("these are your new word");
+            console.log(words);
+        }
     
 
     return (
         <>
             <WordList word={words} />
-            <SubmitForm onWordSubmission={filterWordList}/>
+            <SubmitForm onWordSubmission={filterWordList} word={words}/>
+
             
         </>
     )

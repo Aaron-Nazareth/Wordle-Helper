@@ -20,7 +20,7 @@ const WordList = ({ word }) => {
         <>
             {/* {wordNodes} */}
             {/* {firstWord} */}
-            <Word word={word} key={word.id} />
+            <Word word={word}/>
         </>
     )
 
