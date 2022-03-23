@@ -1,9 +1,9 @@
-import Word from "./Word";
+// import Word from "./Word";
 
 //the name of wordlist is we still wanna return wordlist, but to find first word
 
 
-const WordList = ({ word }) => {
+// const WordList = ({ word }) => {
 
     // const wordNodes = words.map(word => {
     //     return <Word word={word} key={word.id} />
@@ -16,17 +16,17 @@ const WordList = ({ word }) => {
     // const firstWord = wordNodes.at(0);
 
 
-    return (
-        <>
-            {/* {wordNodes} */}
-            {/* {firstWord} */}
-            <Word word={word}/>
-        </>
-    )
+//     return (
+//         <>
+//             {/* {wordNodes} */}
+//             {/* {firstWord} */}
+//             <Word word={word}/>
+//         </>
+//     )
 
 
-}
+// }
 
 
 
-export default WordList;
+// export default WordList;
