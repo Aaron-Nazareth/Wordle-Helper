@@ -26,7 +26,8 @@ body{
 .App-logo{
 display: block; 
 margin: 0 auto ;
-width: 40%;
+width: 50%;
+
 
 }
 
@@ -115,9 +116,17 @@ on click change the state recognise by two things: 1. css 2.response to send to 
   font-size:30px;
   margin: auto;
   position: relative;
+  /* margin: 200px 200px; */
+  
 }
 
 
+input[type=text] {
+  font-size: 20px;
 
+}
 
+input[type=submit] {
+  margin: 50px 200px; 
+}
 
