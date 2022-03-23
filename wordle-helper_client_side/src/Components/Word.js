@@ -9,3 +9,5 @@
 // }
 
 // export default Word;
+
+// hajr is a bitch
