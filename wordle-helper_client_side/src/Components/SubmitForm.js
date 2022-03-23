@@ -4,22 +4,28 @@ import { useState, useEffect, useRef } from "react";
 
 const SubmitForm = ({ onWordSubmission, word }) => {
 
+    // setting initial state for keys
     const [key0, setKey0] = useState("t0");
     const [key1, setKey1] = useState("a1");
     const [key2, setKey2] = useState("r2");
     const [key3, setKey3] = useState("e3");
     const [key4, setKey4] = useState("s4");
 
+    // setting initial state for our colours
     const [colour0, setColour0] = useState("");
     const [colour1, setColour1] = useState("");
     const [colour2, setColour2] = useState("");
     const [colour3, setColour3] = useState("");
     const [colour4, setColour4] = useState("");
 
-    const isMounted = useRef(false);
+
+    // useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue).
+    // The returned object will persist for the full lifetime of the component.
+
+    const isMounted = useRef(false); // useRef set to false so setKeys in useEffect is not used initially. This is because we don't want it to run before its been mounted.
 
     useEffect(()=> {
-        if (isMounted.current) {
+        if (isMounted.current) {    // if its not true we want to set the keys to true the first time it loops
         setKey0(word.word[0] + "0")
         setKey1(word.word[1] + "1")
         setKey2(word.word[2] + "2")
@@ -27,14 +33,13 @@ const SubmitForm = ({ onWordSubmission, word }) => {
         setKey4(word.word[4] + "4")
 
         } else {
-            isMounted.current= true;
+            isMounted.current = true;
         }
         
+    }, [word])  // We want use this so that useEffect is called whenever the state of [word] changes and our keys can be set to the relevant one for each new word
 
-        
 
-    }, [word]) 
-
+    // Creating event handlers for our colour changes
     const handleColour0Change = (event) => {
         setColour0(event.target.value);
 
@@ -56,37 +61,17 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
     }
 
-
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
+    // Creating an event handler for our form submission
+    const handleFormSubmit = async (event) => { // We
+        event.preventDefault(); // Ensures page won't refresh on form submission
 
         if (!colour0 || !colour1 || !colour2 || !colour3 || !colour4) {
-            alert("missing information");
+            alert("missing information");   // Alert for empty fields on form submission options
             return;
         }
 
 
-        //create a key with string 
-
-        // setKey0(word.word[0] + "0")
-        // setKey0(word.word[1] + "1")
-        // setKey0(word.word[2] + "2")
-        // setKey0(word.word[3] + "3")
-        // setKey0(word.word[4] + "4")
-
-        const newWordObject = new Map() 
-
-
-
-            //change the t0 etc to all colours 
-            //the string literal set the keys similar to this
-            //somehow pass in the object through literal 
-            //word.word.0 
-            //youll see the letters changing 
-            //figure out how to update the keys not the value 
-            //value is able to update 
-            //t0 is a key we want to change this to another letter/index
-            //you cant set a key as a string 
+        const newWordObject = new Map() // We want to map the key-value pairs for our new word directly, using the keys and colours we've set up with state
             
             newWordObject.set(key0,colour0);
             newWordObject.set(key1,colour1);
@@ -94,49 +79,24 @@ const SubmitForm = ({ onWordSubmission, word }) => {
             newWordObject.set(key3,colour3);
             newWordObject.set(key4,colour4);
 
-            const objectHolder = Object.fromEntries(newWordObject);
-
-            // newWordObject[key0] = colour0;
-            // newWordObject[key1] = colour1;
-            // newWordObject[key2] = colour2;
-            // newWordObject[key3] = colour3;
-            // newWordObject[key4] = colour4;
-
-
-            // `${word.word[0]}0`: colour0,
-            // key1 : colour1,
-            // key2 : colour2,
-            // key3 : colour3,
-            // key4 : colour4
-
-
-            // `${word.word[0]}0`: colour0,
-            // `${word.word[1]}1`: colour1,
-            // `${word.word[2]}2`: colour2,
-            // `${word.word[3]}3`: colour3,
-            // `${word.word[4]}4`: colour4,
-            
+            const objectHolder = Object.fromEntries(newWordObject); // Here we create an object from these new mapped key-value pair entries
         
+        await onWordSubmission(objectHolder)    // Make our async function (handleFormSubmit) wait for this to be resolved before executing
+        // console.log("onward submission finished");
+        // console.log(word.word);
 
-        
-
-        await onWordSubmission(objectHolder)
-        console.log("onward submission finished");
-        console.log(word.word);
-
+        // Reset colour fields to be ready for next form submission
         setColour0("");
         setColour1("");
         setColour2("");
         setColour3("");
         setColour4("");
-
-        
-
         
     }
 
     return (
-        <form onSubmit={handleFormSubmit}>
+        // We pass our event handler here so the form knows to run our event on submission
+        <form onSubmit={handleFormSubmit}> 
             <label htmlFor="colour0">{key0}</label>
             <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} />
 
@@ -164,6 +124,29 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
 }
 
-
-
 export default SubmitForm;
+
+
+// --------------------------------------
+// Some failed ideas from our attempts to have our keys update with each new word:
+
+// newWordObject[key0] = colour0;
+// newWordObject[key1] = colour1;
+// newWordObject[key2] = colour2;
+// newWordObject[key3] = colour3;
+// newWordObject[key4] = colour4;
+
+
+// `${word.word[0]}0`: colour0,
+// key1 : colour1,
+// key2 : colour2,
+// key3 : colour3,
+// key4 : colour4
+
+
+// `${word.word[0]}0`: colour0,
+// `${word.word[1]}1`: colour1,
+// `${word.word[2]}2`: colour2,
+// `${word.word[3]}3`: colour3,
+// `${word.word[4]}4`: colour4,
+// -------------------------------------
