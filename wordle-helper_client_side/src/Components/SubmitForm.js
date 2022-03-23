@@ -68,11 +68,11 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
         //create a key with string 
 
-        setKey0(word.word[0] + "0")
-        setKey0(word.word[1] + "1")
-        setKey0(word.word[2] + "2")
-        setKey0(word.word[3] + "3")
-        setKey0(word.word[4] + "4")
+        // setKey0(word.word[0] + "0")
+        // setKey0(word.word[1] + "1")
+        // setKey0(word.word[2] + "2")
+        // setKey0(word.word[3] + "3")
+        // setKey0(word.word[4] + "4")
 
         const newWordObject = new Map() 
 
