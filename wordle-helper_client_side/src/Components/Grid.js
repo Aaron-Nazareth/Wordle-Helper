@@ -1,25 +1,45 @@
-import SubmitForm from "../Components/SubmitForm";
-import Word from "./Word";
+import { useEffect, useState } from "react";
+
+//inital status is null
+
+const Grid = ({word}) => {
+  
+const [oneWord,setOneWord] = useState('tares');
+useEffect(()=>{
+  if (word.word !=null) {
+    setOneWord(word.word);
+    
+  }
+},[word]
+//run word change status
+) 
 
 
 
-const Grid = ({SubmitForm}) => {
+
+//  const newArray=word.word.split(); 
+
+  //first word mean allwords, second word mean property 
+  // const arr = Object.entries(word.word);
+
 //pass through the word as a prop 
 //turn it into an array split
+
 //toCharacter function 
 //pass it in as a innerText 
 //through css you can center it and space it 
 
     return(
 
-            
-            <div id="grid">
-              <div className="item">1</div>
-              <div className="item">2</div>
-              <div className="item">3</div>
-              <div className="item">4</div>
-              <div className="item">5</div>
-            </div>
+      // { word.word[0] }
+        <div id="grid">
+
+        <div className="item">{oneWord[0]}</div>
+        <div className="item">{oneWord[1]}</div>
+        <div className="item">{oneWord[2]}</div>
+        <div className="item">{oneWord[3]}</div>
+        <div className="item">{oneWord[4]}</div>
+        </div>
 
     )
 

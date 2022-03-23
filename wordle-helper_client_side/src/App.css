@@ -84,3 +84,11 @@ on click change the state recognise by two things: 1. css 2.response to send to 
 
 
 } */
+
+
+.item {
+  font-size: 50px;
+  color:white;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  
+}

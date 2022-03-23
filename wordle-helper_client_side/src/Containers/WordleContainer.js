@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Word from "../Components/Word";
 import SubmitForm from "../Components/SubmitForm";
+import Grid from "../Components/Grid";
 
 
 
@@ -45,8 +46,12 @@ const WordleContainer = () => {
 
     return (
         <>
-            <Word word={words} />
+            {/* <Word word={words} /> */}
+    
             <SubmitForm onWordSubmission={filterWordList} word={words}/>
+            <Grid word={words} />
+            
+
 
             
         </>

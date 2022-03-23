@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import Grid from "./Grid";
 
 
 const SubmitForm = ({ onWordSubmission, word }) => {
@@ -95,30 +95,35 @@ const SubmitForm = ({ onWordSubmission, word }) => {
     }
 
     return (
-        // We pass our event handler here so the form knows to run our event on submission
-        <form onSubmit={handleFormSubmit}> 
-            <label htmlFor="colour0">{key0}</label>
-            <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} />
+        <>
+        {/* // We pass our event handler here so the form knows to run our event on submission */}
+            <form onSubmit={handleFormSubmit}>
+                <label htmlFor="colour0">{key0}</label>
+                <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} />
 
 
-            <label htmlFor="colour1">{key1}</label>
-            <input type="text" id="colour1" value={colour1} onChange={handleColour1Change} />
+                <label htmlFor="colour1">{key1}</label>
+                <input type="text" id="colour1" value={colour1} onChange={handleColour1Change} />
 
 
-            <label htmlFor="colour2">{key2}</label>
-            <input type="text" id="colour2" value={colour2} onChange={handleColour2Change} />
+                <label htmlFor="colour2">{key2}</label>
+                <input type="text" id="colour2" value={colour2} onChange={handleColour2Change} />
 
 
-            <label htmlFor="colour3">{key3}</label>
-            <input type="text" id="colour3" value={colour3} onChange={handleColour3Change} />
+                <label htmlFor="colour3">{key3}</label>
+                <input type="text" id="colour3" value={colour3} onChange={handleColour3Change} />
 
 
-            <label htmlFor="colour4">{key4}</label>
-            <input type="text" id="colour4" value={colour4} onChange={handleColour4Change} />
+                <label htmlFor="colour4">{key4}</label>
+                <input type="text" id="colour4" value={colour4} onChange={handleColour4Change} />
 
-            <input type="submit" value="SUBMIT" />
+                <input type="submit" value="SUBMIT" />
 
-        </form>
+            </form>
+            
+        
+        </>
+        
     )
 
 

@@ -1,11 +1,11 @@
-const Word = ({ word }) => {
+// const Word = ({ word }) => {
 
-    return (
-        <>
-            <h3>{word.word}</h3>
-        </>
-    )
+//     return (
+//         <>
+//             <div className="displayWord">{word.word}</div>
+//         </>
+//     )
 
-}
+// }
 
-export default Word;
+// export default Word;
