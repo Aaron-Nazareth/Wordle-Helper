@@ -2,7 +2,8 @@
 :root{
   --yellow: #c9b458;
   --green: #6aaa64;
-  --grey: #787c7e;
+  /* --grey: rgb(57, 55, 55); */
+  --grey: #787C7e;
   --white: #fff;
 
   --square-size: 160px;
@@ -52,37 +53,33 @@ width: 40%;
     font-size: var(--text-size);
     border: solid black 5px;
 
-
-   
-   
-
  /* styling */
   font-size: 50px;
   color:white;
   font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-  background-color: rgb(57, 55, 55);
+  /* background-color: rgb(57, 55, 55); */
   text-transform: uppercase;
   font-weight: bold;  
   transition: transform 0.2s;
-
 }
+
 
 #grid div:hover{
       transform: scale(1.2);
 }
 
-#grid .green{
+#grid [colour = "green"]{
   background-color: var(--green);
 
 }
 
-#grid .yellow{
+#grid [colour = "yellow"]{
   background-color: var(--yellow);
 
 }
 
-#grid .grey{
-  background-color: var(--gray);
+#grid [colour = "grey"]{
+  background-color: var(--grey);
 
 }
 

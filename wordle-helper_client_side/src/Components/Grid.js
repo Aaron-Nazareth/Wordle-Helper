@@ -14,7 +14,12 @@ useEffect(()=>{
 //run word change status
 ) 
 
+//  const item = document.getElementsByClassName("item")
+ 
 
+//  item.addEventListener("click", () => {
+//   //  const currentColour = 
+//  })
 
 
 //  const newArray=word.word.split(); 
@@ -34,14 +39,17 @@ useEffect(()=>{
       // { word.word[0] }
         <div id="grid">
 
-        <div className="item">{oneWord[0]}</div>
-        <div className="item">{oneWord[1]}</div>
-        <div className="item">{oneWord[2]}</div>
-        <div className="item">{oneWord[3]}</div>
-        <div className="item">{oneWord[4]}</div>
+        <div className="item" colour="grey">{oneWord[0]}</div>
+        <div className="item" colour="grey">{oneWord[1]}</div>
+        <div className="item" colour="grey">{oneWord[2]}</div>
+        <div className="item" colour="grey">{oneWord[3]}</div>
+        <div className="item" colour="grey">{oneWord[4]}</div>
         </div>
 
     )
+
+      
+    
 
 }
 
