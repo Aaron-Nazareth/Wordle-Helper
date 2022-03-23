@@ -2,14 +2,14 @@
 :root{
   --yellow: #c9b458;
   --green: #6aaa64;
-  --gray: #86888a;
+  --grey: #787c7e;
   --white: #fff;
 
-  --square-size: 150px;
+  --square-size: 160px;
   --square-rad: 10px;
   --spacing: 30px;
   --text-size: 50px;
-
+  --font-size: 100px;
 }
 
 *{
@@ -26,7 +26,7 @@ body{
 .App-logo{
 display: block; 
 margin: 0 auto ;
-width: 50%;
+width: 40%;
 
 }
 
@@ -35,7 +35,9 @@ width: 50%;
   justify-content: center;
   gap: var(--spacing);
   flex-wrap: wrap;
-  background-color: grey;
+  background-color: white;
+  margin-top: 10%;
+  
 
 }
 
@@ -45,15 +47,28 @@ width: 50%;
     display: inline-block;
     height: var(--square-size);
     width: var(--square-size);
-    border-radius: var(--square-rad);
     text-align: center;
     line-height: var(--square-size);
     font-size: var(--text-size);
-    /* margin: var(--spacing); */
-    /* position: relative; */
+    border: solid black 5px;
 
-    /* styling */
-    background-color: var(--white);
+
+   
+   
+
+ /* styling */
+  font-size: 50px;
+  color:white;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+  background-color: rgb(57, 55, 55);
+  text-transform: uppercase;
+  font-weight: bold;  
+  transition: transform 0.2s;
+
+}
+
+#grid div:hover{
+      transform: scale(1.2);
 }
 
 #grid .green{
@@ -86,9 +101,23 @@ on click change the state recognise by two things: 1. css 2.response to send to 
 } */
 
 
-.item {
+/* .item {
   font-size: 50px;
-  color:white;
+  color:black;
   font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-  
+  background-color: var(--gray);
+  border: solid black 5px;
+  border-radius: 10px /50%; */
+  /* border-style: groove; */
+  /* border-width: 5px; */
+
+.submitForm{
+  font-size:30px;
+  margin: auto;
+  position: relative;
 }
+
+
+
+
+

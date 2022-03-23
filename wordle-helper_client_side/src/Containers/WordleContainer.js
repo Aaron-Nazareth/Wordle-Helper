@@ -47,9 +47,11 @@ const WordleContainer = () => {
     return (
         <>
             {/* <Word word={words} /> */}
-    
-            <SubmitForm onWordSubmission={filterWordList} word={words}/>
-            <Grid word={words} />
+             <Grid word={words} />
+                <br></br>
+                
+            <center> <SubmitForm  onWordSubmission={filterWordList} word={words}/> </center>
+            
             
 
 

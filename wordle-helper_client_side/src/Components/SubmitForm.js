@@ -97,8 +97,8 @@ const SubmitForm = ({ onWordSubmission, word }) => {
     return (
         <>
         {/* // We pass our event handler here so the form knows to run our event on submission */}
-            <form onSubmit={handleFormSubmit}>
-                <label htmlFor="colour0">{key0}</label>
+            <form onSubmit={handleFormSubmit} className="submitForm">
+                <label htmlFor="colour0">{key0} </label>
                 <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} />
 
 
@@ -107,17 +107,17 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
 
                 <label htmlFor="colour2">{key2}</label>
-                <input type="text" id="colour2" value={colour2} onChange={handleColour2Change} />
+                <input type="text" id="colour2" value={colour2} onChange={handleColour2Change}/>
 
 
                 <label htmlFor="colour3">{key3}</label>
-                <input type="text" id="colour3" value={colour3} onChange={handleColour3Change} />
+                <input type="text" id="colour3" value={colour3} onChange={handleColour3Change}/>
 
 
                 <label htmlFor="colour4">{key4}</label>
-                <input type="text" id="colour4" value={colour4} onChange={handleColour4Change} />
+                <input type="text" id="colour4" value={colour4} onChange={handleColour4Change}/>
 
-                <input type="submit" value="SUBMIT" />
+                <input type="submit" value="SUBMIT" className="submitForm" />
 
             </form>
             
