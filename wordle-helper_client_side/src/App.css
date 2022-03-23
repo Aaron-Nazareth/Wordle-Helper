@@ -53,7 +53,7 @@ width: 50%;
     /* position: relative; */
 
     /* styling */
-    background-color: violet;
+    background-color: var(--white);
 }
 
 #grid .green{
