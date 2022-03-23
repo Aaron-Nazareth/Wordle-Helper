@@ -37,9 +37,10 @@ useEffect(()=>{
     return(
 
       // { word.word[0] }
+     
         <div id="grid">
 
-        <div className="item" colour="grey">{oneWord[0]}</div>
+        <div className="item" colour="green">{oneWord[0]}</div>
         <div className="item" colour="grey">{oneWord[1]}</div>
         <div className="item" colour="grey">{oneWord[2]}</div>
         <div className="item" colour="grey">{oneWord[3]}</div>
@@ -47,6 +48,7 @@ useEffect(()=>{
         </div>
 
     )
+
 
       
     
