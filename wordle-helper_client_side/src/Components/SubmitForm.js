@@ -198,7 +198,7 @@ const SubmitForm = ({ onWordSubmission, word }) => {
     return (
         <>
         {/* // We pass our event handler here so the form knows to run our event on submission */}
-            <form onSubmit={handleFormSubmit} >
+            <form onSubmit={handleFormSubmit} className="allForm">
                 <label htmlFor="colour0"> 1. </label>
                 <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} size="15.5"/>
 
