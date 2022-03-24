@@ -94,6 +94,107 @@ const SubmitForm = ({ onWordSubmission, word }) => {
         
     }
 
+    // const items = document.getElementsByClassName("item")
+    // const square0 = items[0]
+    // const square1 = items[1]
+    // const square2 = items[2]
+    // const square3 = items[3]
+    // const square4 = items[4]
+
+
+    // const itemColour = ["grey", "yellow", "green"]
+    // square0.addEventListener("click", () => {
+
+    //     const currentColour = square0.getAttribute("colour")
+
+    //     const colourIndex = itemColour.indexOf(currentColour);
+
+    //     const nextColour = itemColour[(colourIndex + 1) % 3];
+
+    //     square0.setAttribute("colour", nextColour)
+
+    //     setColour0(nextColour)
+    // })
+
+
+    // square1.addEventListener("click", () => {
+
+    //     const currentColour = square1.getAttribute("colour")
+
+    //     const colourIndex = itemColour.indexOf(currentColour);
+
+    //     const nextColour = itemColour[(colourIndex + 1) % 3];
+
+    //     square1.setAttribute("colour", nextColour)
+
+    //     setColour1(nextColour)
+    // })
+
+
+    // square2.addEventListener("click", () => {
+
+    //     const currentColour = square2.getAttribute("colour")
+
+    //     const colourIndex = itemColour.indexOf(currentColour);
+
+    //     const nextColour = itemColour[(colourIndex + 1) % 3];
+
+    //     square2.setAttribute("colour", nextColour)
+
+    //     setColour2(nextColour)
+    // })
+
+
+    // square3.addEventListener("click", () => {
+
+    //     const currentColour = square3.getAttribute("colour")
+
+    //     const colourIndex = itemColour.indexOf(currentColour);
+
+    //     const nextColour = itemColour[(colourIndex + 1) % 3];
+
+    //     square3.setAttribute("colour", nextColour)
+
+    //     setColour3(nextColour)
+    // })
+
+
+    // square4.addEventListener("click", () => {
+
+    //     const currentColour = square4.getAttribute("colour")
+
+    //     const colourIndex = itemColour.indexOf(currentColour);
+
+    //     const nextColour = itemColour[(colourIndex + 1) % 3];
+
+    //     square4.setAttribute("colour", nextColour)
+
+    //     setColour4(nextColour)
+    // })
+
+
+
+
+
+    // for (let i = 0; i < items.length; i++) {
+    //     items[i].addEventListener("click", () => {
+
+    //         let item = items[i]
+
+    //         const currentColour = item.getAttribute("colour")
+
+    //         const colourIndex = itemColour.indexOf(currentColour);
+
+    //         const nextColour = itemColour[(colourIndex + 1) % 3];
+
+    //         item.setAttribute("colour", nextColour)
+
+
+    //     })
+    // }
+
+
+
     return (
         <>
         {/* // We pass our event handler here so the form knows to run our event on submission */}
@@ -125,7 +226,6 @@ const SubmitForm = ({ onWordSubmission, word }) => {
         </>
         
     )
-
 
 }
 
