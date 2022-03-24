@@ -12,9 +12,9 @@ const SubmitForm = ({ onWordSubmission, word }) => {
     const [key4, setKey4] = useState("s4");
 
     // setting initial state for our colours
-    const [colour0, setColour0] = useState("");
-    const [colour1, setColour1] = useState("");
-    const [colour2, setColour2] = useState("");
+    const [colour0, setColour0] = useState("");  // put this up a level in wordlecontainer  passed as a prop to the grid - can create an array 
+    const [colour1, setColour1] = useState("");   // pass colour states as props to grid - grid can handle updating the colour on click - grid is solely responsible for managing the clicks and updating colours 
+    const [colour2, setColour2] = useState("");  // pass the colour states as props within the submit form 
     const [colour3, setColour3] = useState("");
     const [colour4, setColour4] = useState("");
 
@@ -113,7 +113,7 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
     //     square0.setAttribute("colour", nextColour)
 
-    //     setColour0(nextColour)
+    //     // setColour0(nextColour)
     // })
 
 
@@ -127,7 +127,7 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
     //     square1.setAttribute("colour", nextColour)
 
-    //     setColour1(nextColour)
+    //     // setColour1(nextColour)
     // })
 
 
@@ -141,7 +141,7 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
     //     square2.setAttribute("colour", nextColour)
 
-    //     setColour2(nextColour)
+    //     // setColour2(nextColour)
     // })
 
 
@@ -155,13 +155,13 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
     //     square3.setAttribute("colour", nextColour)
 
-    //     setColour3(nextColour)
+    //     // setColour3(nextColour)
     // })
 
 
     // square4.addEventListener("click", () => {
 
-    //     const currentColour = square4.getAttribute("colour")
+    //     const currentColour = square4.getAttribute("colour")   // change the logic - modify the state 
 
     //     const colourIndex = itemColour.indexOf(currentColour);
 
@@ -169,7 +169,7 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
     //     square4.setAttribute("colour", nextColour)
 
-    //     setColour4(nextColour)
+    //     // setColour4(nextColour)
     // })
 
 

@@ -53,16 +53,18 @@ useEffect(()=>{
       <>
        <div id="grid">
 
-        <div className="item" id="square0" colour="grey">{oneWord[0]}</div>
+        <div className="item" id="square0" colour="grey">{oneWord[0]}</div>  
         <div className="item" id="square1" colour="grey">{oneWord[1]}</div>
         <div className="item" id="square2" colour="grey">{oneWord[2]}</div>
         <div className="item" id="square3" colour="grey">{oneWord[3]}</div>
         <div className="item" id="square4" colour="grey">{oneWord[4]}</div>
-        </div>
+        </div> 
+
 
         <button></button>
       
       </>
+      // pass colour within the state 
        
 
     )
