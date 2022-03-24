@@ -10,6 +10,7 @@
   --spacing: 30px;
   --text-size: 50px;
   --font-size: 100px;
+  
 }
 
 *{
@@ -112,21 +113,207 @@ on click change the state recognise by two things: 1. css 2.response to send to 
   /* border-style: groove; */
   /* border-width: 5px; */
 
+  /* changing the form */
 .submitForm{
   font-size:30px;
   margin: auto;
   position: relative;
-  /* margin: 200px 200px; */
+ 
   
 }
 
-
+/* changing the entry field text size */
 input[type=text] {
   font-size: 20px;
 
 }
-
+/* changing the position of the submit button  */
 input[type=submit] {
   margin: 50px 200px; 
 }
 
+/* navigation bar */
+
+
+.menuLeft{
+align-items: center;
+color: rgb(0,0,0);
+display:flex;
+font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
+font-size:16px;
+justify-content:flex-start;
+width:70px;
+height:27.5px;
+}
+
+.menuLeft{
+  
+  color: rgb(0,0,0);
+  display:flex;
+  font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
+  font-size:16px;
+  justify-content:center;
+  width:70px;
+  height:27.5px;
+  align-items:center;
+  }
+
+  header{
+align-items:center;
+display:flex;
+flex-direction:row;
+flex-wrap:nowrap;
+height:50px;
+justify-content: space-between;
+padding-left:16px;
+padding-right:16px;
+width:630px;
+font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
+font-size: 16px;
+color:rgb(0,0,0);
+border-bottom-color:rgb(211,214,218);
+border-bottom-style:solid;
+border-bottom-width:1px;
+/* margin:0px; */
+margin-top: 0;
+margin-left:0;
+
+
+  }
+
+
+  #navButton{
+align-item:flex-start;
+box-sizing:border-box;
+display:block;
+height: 22.5px;
+padding-left: 4px;
+padding-right:4px;
+padding-top:2px;
+width:32px;
+font-family:Arial;
+font-size:13.33px;
+font-stretch:100%;
+font-weight:400;
+text-align:center;
+color: rbg(0,0,0);
+background-attachment:scroll;
+background-clip:border-box;
+background-color:rgba(0, 0, 0, 0);
+background-image:none;
+background-origin: padding-box;
+background-position-x: 0%;
+background-position-y: 0%;
+/* background-repeat-x
+background-repeat-y */
+background-size: auto;
+border-bottom-color: rgb(0, 0, 0);
+border-bottom-style:none;
+border-bottom-width: 0px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice :100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(0, 0, 0);
+border-left-style :none;
+border-left-width: 0px;
+border-right-color :rgb(0, 0, 0);
+border-right-style :none;
+border-right-width :0px;
+border-top-color :rgb(0, 0, 0);
+border-top-style: none;
+border-top-width: 0px;
+cursor :pointer;
+}
+
+#helpButton{
+  align-item:flex-start;
+  box-sizing:border-box;
+  display:block;
+  height: 27.5px;
+  padding-left: 4px;
+  padding-right:4px;
+  padding-top:0px;
+  width:32px;
+  font-family:Arial;
+  font-size:13.33px;
+  font-stretch:100%;
+  font-weight:400;
+  text-align:center;
+  color: rbg(0,0,0);
+  background-attachment:scroll;
+  background-clip:border-box;
+  background-color:rgba(0, 0, 0, 0);
+  background-image:none;
+  background-origin: padding-box;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  /* background-repeat-x
+  background-repeat-y */
+  background-size: auto;
+  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-style:none;
+  border-bottom-width: 0px;
+  border-image-outset: 0;
+  border-image-repeat: stretch;
+  border-image-slice :100%;
+  border-image-source: none;
+  border-image-width: 1;
+  border-left-color: rgb(0, 0, 0);
+  border-left-style :none;
+  border-left-width: 0px;
+  border-right-color :rgb(0, 0, 0);
+  border-right-style :none;
+  border-right-width :0px;
+  border-top-color :rgb(0, 0, 0);
+  border-top-style: none;
+  border-top-width: 0px;
+  cursor :pointer;
+  }
+
+
+  #settingButton{
+    align-item:flex-start;
+    box-sizing:border-box;
+    display:block;
+    height: 22.5px;
+    padding-left: 4px;
+    padding-right:4px;
+    padding-top:2px;
+    width:32px;
+    font-family:Arial;
+    font-size:13.33px;
+    font-stretch:100%;
+    font-weight:400;
+    text-align:center;
+    color: rbg(0,0,0);
+    background-attachment:scroll;
+    background-clip:border-box;
+    background-color:rgba(0, 0, 0, 0);
+    background-image:none;
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    /* background-repeat-x
+    background-repeat-y */
+    background-size: auto;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style:none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice :100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style :none;
+    border-left-width: 0px;
+    border-right-color :rgb(0, 0, 0);
+    border-right-style :none;
+    border-right-width :0px;
+    border-top-color :rgb(0, 0, 0);
+    border-top-style: none;
+    border-top-width: 0px;
+    cursor :pointer;
+    }
