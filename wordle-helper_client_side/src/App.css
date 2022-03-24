@@ -51,7 +51,7 @@ width: 40%;
     text-align: center;
     line-height: var(--square-size);
     font-size: var(--text-size);
-    border: solid black 5px;
+    border: solid rgb(72, 72, 72) 5px;
 
  /* styling */
   font-size: 50px;

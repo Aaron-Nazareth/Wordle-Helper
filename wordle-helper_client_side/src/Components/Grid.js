@@ -4,7 +4,15 @@ import { useEffect, useState } from "react";
 
 const Grid = ({word}) => {
   
+
+
+
 const [oneWord,setOneWord] = useState('tares');
+
+// const [colour, setColour] = useState("grey");
+
+
+
 useEffect(()=>{
   if (word.word !=null) {
     setOneWord(word.word);
@@ -14,44 +22,49 @@ useEffect(()=>{
 //run word change status
 ) 
 
-//  const item = document.getElementsByClassName("item")
+
+
+const items = document.getElementsByClassName("item")
+ const itemColour = ["grey", "yellow", "green"]
+
+for (let i = 0; i < items.length; i++){
+  items[i].addEventListener("click", ()  => {
+
+  let item = items[i]
+
+    const currentColour = item.getAttribute("colour")
+
  
+    const colourIndex = itemColour.indexOf(currentColour);
+ 
+    const nextColour = itemColour[(colourIndex + 1)%3];
+ 
+    item.setAttribute("colour", nextColour)
+ 
+  })
+}
 
-//  item.addEventListener("click", () => {
-//   //  const currentColour = 
-//  })
-
-
-//  const newArray=word.word.split(); 
-
-  //first word mean allwords, second word mean property 
-  // const arr = Object.entries(word.word);
-
-//pass through the word as a prop 
-//turn it into an array split
-
-//toCharacter function 
-//pass it in as a innerText 
-//through css you can center it and space it 
 
     return(
 
       // { word.word[0] }
      
-        <div id="grid">
+      <>
+       <div id="grid">
 
-        <div className="item" colour="green">{oneWord[0]}</div>
+        <div className="item" colour="yellow">{oneWord[0]}</div>
         <div className="item" colour="grey">{oneWord[1]}</div>
         <div className="item" colour="grey">{oneWord[2]}</div>
         <div className="item" colour="grey">{oneWord[3]}</div>
         <div className="item" colour="grey">{oneWord[4]}</div>
         </div>
+      
+      </>
+       
 
     )
 
 
-      
-    
 
 }
 
