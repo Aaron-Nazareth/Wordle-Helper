@@ -198,31 +198,33 @@ const SubmitForm = ({ onWordSubmission, word }) => {
     return (
         <>
         {/* // We pass our event handler here so the form knows to run our event on submission */}
-            <form onSubmit={handleFormSubmit} className="submitForm">
-                <label htmlFor="colour0">{key0} </label>
-                <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} />
+            <form onSubmit={handleFormSubmit} >
+                <label htmlFor="colour0"> 1. </label>
+                <input type="text" id="colour0" value={colour0} onChange={handleColour0Change} size="15.5"/>
 
 
-                <label htmlFor="colour1">{key1}</label>
-                <input type="text" id="colour1" value={colour1} onChange={handleColour1Change} />
+                <label htmlFor="colour1"> 2. </label>
+                <input type="text" id="colour1" value={colour1} onChange={handleColour1Change} size="15.5" />
 
 
-                <label htmlFor="colour2">{key2}</label>
-                <input type="text" id="colour2" value={colour2} onChange={handleColour2Change}/>
+                <label htmlFor="colour2"> 3.  </label>
+                <input type="text" id="colour2" value={colour2} onChange={handleColour2Change} size="15.5"/>
 
 
-                <label htmlFor="colour3">{key3}</label>
-                <input type="text" id="colour3" value={colour3} onChange={handleColour3Change}/>
+                <label htmlFor="colour3">  4. </label>
+                <input type="text" id="colour3" value={colour3} onChange={handleColour3Change} size="15.5"/>
 
 
-                <label htmlFor="colour4">{key4}</label>
-                <input type="text" id="colour4" value={colour4} onChange={handleColour4Change}/>
+                <label htmlFor="colour4"> 5.  </label>
+                <input type="text" id="colour4" value={colour4} onChange={handleColour4Change} size="15.5"/>
 
-                <input type="submit" value="SUBMIT" className="submitForm" />
+            <div className="formButton">
+            <input type="submit" value="SUBMIT" className="submitFormBtn" />
+
+            </div>
 
             </form>
             
-        
         </>
         
     )

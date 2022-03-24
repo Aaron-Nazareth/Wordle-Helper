@@ -22,9 +22,6 @@
 
 }
 
-body{
-
-}
 
 h1{
   margin-bottom: 0px;
@@ -102,12 +99,14 @@ on click change the state recognise by two things: 1. css 2.response to send to 
 /* each box will have an onClick to change to three colours this will cause   */
 
 
-.submitForm{
-  font-size:30px;
+.submitFormButton{
+  font-size:20px;
   margin: auto;
-  position: relative;
- 
-  
+  height: 25px;
+  background-color: #6aaa64;
+  /* align-items: center; */
+
+  /* align-content: left; */
 }
 
 /* changing the entry field text size */
@@ -117,11 +116,66 @@ input[type=text] {
 }
 /* changing the position of the submit button  */
 input[type=submit] {
-  margin: 50px 200px; 
+  /* justify-content: center; */
+  align-content: center;
+  margin: 50px 250px; 
 }
 
-/* navigation bar */
+/* ---------SUBMIT BUTTON----------- */
 
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.formButton {
+  margin: 10%;
+  text-align: center;
+}
+
+.submitFormBtn {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.submitFormBtn:hover {
+  background-position: 100% 0;
+  moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.submitFormBtn:focus {
+  outline: none;
+}
+
+.submitFormBtn.colour-1 {
+  background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+  box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+/* -------------------- */
+
+
+
+/* navigation bar */
 
 .menuLeft{
 display:flex;
@@ -171,10 +225,10 @@ border-bottom-width: 1px;
   }
 
 
-  #navButton{
+  #navButton{   
 align-item:flex-start;
 box-sizing:border-box;
-display:block;
+display:flex;
 height: 22.5px;
 padding-left: 4px;
 padding-right:4px;
@@ -222,7 +276,8 @@ cursor :pointer;
   box-sizing:border-box;
   display:block;
   height: 27.5px;
-  padding: 0px 4px 0px 4px;
+  /* top, right , bottom, left padding */
+  padding: 4px 4px 4px 4px;
   width:32px;
   font-family:Arial;
   font-size:13.33px;
