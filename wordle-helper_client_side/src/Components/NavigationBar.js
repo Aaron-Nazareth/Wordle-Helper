@@ -1,3 +1,8 @@
+
+
+const NavigationBar = () => {
+    return (
+        <>
 <header> 
 <div class="menuLeft">
 <button id="navButton" class="icon" aria-label="Navigation menu">
@@ -37,3 +42,8 @@
 
     </div>
  </header>
+ </>
+    )
+}
+
+export default NavigationBar;
