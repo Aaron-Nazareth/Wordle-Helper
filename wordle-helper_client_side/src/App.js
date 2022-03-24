@@ -8,7 +8,7 @@ import wordlehelper from './images/wordlehelper.png';
 function App() {
   return (
     <>
-
+{/* a comment  */}
       <header> 
       <div class="menuLeft">
         <button id="navButton" class="icon" aria-label="Navigation menu">
