@@ -219,7 +219,7 @@ const SubmitForm = ({ onWordSubmission, word }) => {
                 <input type="text" id="colour4" value={colour4} onChange={handleColour4Change} size="15.5"/>
 
             <div className="formButton">
-            <input type="submit" value="SUBMIT" className="submitFormBtn" />
+            <input type="submit" value="SUBMIT" className="submitFormBtn color-1" />
 
             </div>
 

@@ -121,7 +121,7 @@ input[type=submit] {
   margin: 50px 250px; 
 }
 
-/* ---------SUBMIT BUTTON----------- */
+/* ---------SUBMIT BUTTON CSS START----------- */
 
 
 * {
@@ -148,17 +148,17 @@ input[type=submit] {
   background-size: 300% 100%;
 
   border-radius: 50px;
-  moz-transition: all .4s ease-in-out;
+  /* moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out; */
   transition: all .4s ease-in-out;
 }
 
 .submitFormBtn:hover {
   background-position: 100% 0;
-  moz-transition: all .4s ease-in-out;
+  /* moz-transition: all .4s ease-in-out;
   -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out; */
   transition: all .4s ease-in-out;
 }
 
@@ -166,12 +166,12 @@ input[type=submit] {
   outline: none;
 }
 
-.submitFormBtn.colour-1 {
+.submitFormBtn.color-1 {
   background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
   box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
-/* -------------------- */
+/* ---------SUBMIT BUTTON CSS END----------- */
 
 
 

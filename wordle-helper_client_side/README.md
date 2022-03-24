@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Wordle-Helper client-side
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Group1 of the BNTA client-side project aiming to create a front-end application for an existing Wordle-Helper server-side project.
 
-## Available Scripts
+By Aaron, Alimaa, Hajr, Shirhan and Zhengyang.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Description
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Brief
+In this project your team will be building a front-end application to consolidate the work you have done with JavaScript, React, HTML and CSS. You will have one week to research, plan and develop your application before you have the opportunity to present your work to your colleagues, instructors and clients.
 
-### `npm test`
+For this project you will be building a React application to act as a front-end for one of the APIs built during the server-side projects. Your group will be working with an API none of you have seen before and you will need to familiarise yourselves with it before you start developing your app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech Stack
 
-### `npm run build`
+This is a front-end project which should be built using:
+- JavaScript + React
+- HTML
+- CSS
+- The API asigned to your group
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
+    1. Clone the Repo in terminal: git clone git@github.com:Aaron-Nazareth/Wordle-Helper.git
+    2. Open server-side repo ("Wordle-Helper") in IntelliJ and run the SpringBoot application ("WordleHelperApplication.java").
+    3. Open client-side repo ("wordle-helper_client_side") in Visual Studio Code (VSC) and run the following code in the VSC in-built terminal:
+        - npm install
+        - npm start
+    4. Use our Wordle Helper Application to support you through your Wordle struggles! (Instructions on how to use the helper specifically are available as a pop-up within the application)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Acknowledgements
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Aaron](https://github.com/Aaron-Nazareth)
+- [Alimaa](https://github.com/alimaa05)
+- [Hajr](https://github.com/hdelli)
+- [Shirhan](https://github.com/shirhan25)
+- [Zhengyang](https://github.com/zhengyangqiu)

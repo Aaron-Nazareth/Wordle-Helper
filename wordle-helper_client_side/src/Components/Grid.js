@@ -59,8 +59,6 @@ useEffect(()=>{
         <div className="item" id="square3" colour="grey">{oneWord[3]}</div>
         <div className="item" id="square4" colour="grey">{oneWord[4]}</div>
         </div>
-
-        <button></button>
       
       </>
        
