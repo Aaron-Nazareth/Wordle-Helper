@@ -44,6 +44,29 @@ for (let i = 0; i < items.length; i++) {
 }
 
 
+//  const items = document.getElementsByClassName("item")
+//     const square0 = items[0]
+//     const square1 = items[1]
+//     const square2 = items[2]
+//     const square3 = items[3]
+//     const square4 = items[4]
+
+
+//     const itemColour = ["grey", "yellow", "green"]
+//     square0.addEventListener("click", () => {
+
+//         const currentColour = square0.getAttribute("colour")
+
+//         const colourIndex = itemColour.indexOf(currentColour);
+
+//         const nextColour = itemColour[(colourIndex + 1) % 3];
+
+//         square0.setAttribute("colour", nextColour)
+
+//         // setColour0(nextColour)
+//     })
+
+
 
     return(
 
