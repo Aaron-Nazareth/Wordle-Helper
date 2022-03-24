@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 //inital status is null
 
-const Grid = ({word}) => {
+const Grid = ({word, colour0, colour1, colour2, colour3, colour4}) => {
   
 
 
@@ -23,26 +23,25 @@ useEffect(()=>{
 ) 
 
 
+const items = document.getElementsByClassName("item")
+const itemColour = ["grey", "yellow", "green"]
 
-// const items = document.getElementsByClassName("item")
-//  const itemColour = ["grey", "yellow", "green"]
+for (let i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", () => {
 
-// for (let i = 0; i < items.length; i++){
-//   items[i].addEventListener("click", ()  => {
+        let item = items[i]
 
-//   let item = items[i]
+        const currentColour = item.getAttribute("colour")
 
-//     const currentColour = item.getAttribute("colour")
+        const colourIndex = itemColour.indexOf(currentColour);
 
- 
-//     const colourIndex = itemColour.indexOf(currentColour);
- 
-//     const nextColour = itemColour[(colourIndex + 1)%3];
- 
-//     item.setAttribute("colour", nextColour)
- 
-//   })
-// }
+        const nextColour = itemColour[(colourIndex + 1) % 3];
+
+        item.setAttribute("colour", nextColour)
+
+
+    })
+}
 
 
 
@@ -61,7 +60,7 @@ useEffect(()=>{
         </div> 
 
 
-        <button></button>
+        <input type="submit" value="Submit" className="submitForm"/> 
       
       </>
       // pass colour within the state 

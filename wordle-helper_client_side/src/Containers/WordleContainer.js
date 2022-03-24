@@ -13,6 +13,13 @@ const WordleContainer = () => {
     const [words, setWords] = useState([]);
 
 
+    const [colour0, setColour0] = useState("grey");  // put this up a level in wordlecontainer  passed as a prop to the grid - can create an array 
+    const [colour1, setColour1] = useState("grey");   // pass colour states as props to grid - grid can handle updating the colour on click - grid is solely responsible for managing the clicks and updating colours 
+    const [colour2, setColour2] = useState("grey");  // pass the colour states as props within the submit form 
+    const [colour3, setColour3] = useState("grey");
+    const [colour4, setColour4] = useState("grey");
+
+
     useEffect(() => {
         
         fetch("http://localhost:8080/helper/start")
@@ -47,10 +54,10 @@ const WordleContainer = () => {
     return (
         <>
             {/* <Word word={words} /> */}
-             <Grid word={words} />
+             <Grid word={words} colour0={colour0} colour1={colour1} colour2={colour2} colour3={colour3} colour4={colour4}/>
                 
                 
-            <center> <SubmitForm  onWordSubmission={filterWordList} word={words}/> </center>
+            {/* <center> <SubmitForm  onWordSubmission={filterWordList} word={words} colour0={colour0} colour1={colour1} colour2={colour2} colour3={colour3} colour4={colour4}/> </center> */}
             
             
 

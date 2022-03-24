@@ -122,8 +122,14 @@ on click change the state recognise by two things: 1. css 2.response to send to 
   margin: auto;
   position: relative;
 }
-
-
+/* submit button */
+input[type=submit] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5%;
+  /* text-align: center;
+  margin: 50px 200px;  */
+}
 
 
 
