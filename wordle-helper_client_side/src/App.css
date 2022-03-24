@@ -24,10 +24,17 @@ body{
 
 }
 
+h1{
+  margin-bottom: 0px;
+
+ 
+}
+
 .App-logo{
 display: block; 
 margin: 0 auto ;
 width: 40%;
+
 
 }
 
