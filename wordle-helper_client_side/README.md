@@ -6,6 +6,16 @@ By Aaron, Alimaa, Hajr, Shirhan and Zhengyang.
 
 
 
+## Contents
+
+* [Project Description – project outline and Tech Stack](#Project-Description)
+    * [Brief](#Brief)
+    * [Tech Stack](#Tech-Stack)
+* [Setup Instructions](#Setup-Instructions)
+* [Acknowledgements](#Acknowledgements)
+
+
+
 ## Project Description
 
 ### Brief
