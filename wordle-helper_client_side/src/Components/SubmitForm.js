@@ -174,24 +174,25 @@ const SubmitForm = ({ onWordSubmission, word }) => {
 
 
 
+    const items = document.getElementsByClassName("item")
+    const itemColour = ["grey", "yellow", "green"]
+
+    for (let i = 0; i < items.length; i++) {
+        items[i].addEventListener("click", () => {
+
+            let item = items[i]
+
+            const currentColour = item.getAttribute("colour")
+
+            const colourIndex = itemColour.indexOf(currentColour);
+
+            const nextColour = itemColour[(colourIndex + 1) % 3];
+
+            item.setAttribute("colour", nextColour)
 
 
-    // for (let i = 0; i < items.length; i++) {
-    //     items[i].addEventListener("click", () => {
-
-    //         let item = items[i]
-
-    //         const currentColour = item.getAttribute("colour")
-
-    //         const colourIndex = itemColour.indexOf(currentColour);
-
-    //         const nextColour = itemColour[(colourIndex + 1) % 3];
-
-    //         item.setAttribute("colour", nextColour)
-
-
-    //     })
-    // }
+        })
+    }
 
 
 
