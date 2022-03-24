@@ -331,9 +331,10 @@ cursor :pointer;
  
 .box {
   position: relative;
-  width: 50%;
-  height: 70%;
+  width: 40%;
+  height: 50%;
   margin: 0 auto;
+  
   
   max-height: 70vh;
   margin-top: calc(100vh - 85vh - 20px);
@@ -343,6 +344,11 @@ cursor :pointer;
   border: 1px solid #999;
   overflow: auto;
   background-color: #787C7e;
+
+ 
+
+
+
 }
 
 .close-icon {
@@ -364,7 +370,7 @@ cursor :pointer;
 
 
 .instruction{
-  font-size: 20px;
+  font-size: 15px;
   font-family: var(--font-family);
   text-align: justify;
   text-align-last: center;
@@ -377,7 +383,7 @@ cursor :pointer;
 
 .instructions-title{
 
-   font-size: 20px;
+  font-size: 15px;
   font-family: var(--font-family);
   text-align: justify;
   text-align-last: center;
