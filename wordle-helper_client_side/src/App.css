@@ -51,8 +51,6 @@ width: 50%;
 
 }
 
-
-
 #grid div{
     display: flex;
     justify-content: center;
@@ -102,24 +100,7 @@ on click change the state recognise by two things: 1. css 2.response to send to 
 /* on click change the colour to green/yellow/grey */
 /* each box will have an onClick to change to three colours this will cause   */
 
-/* #t0{
-  background-color: black;
 
-
-} */
-
-
-/* .item {
-  font-size: 50px;
-  color:black;
-  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
-  background-color: var(--gray);
-  border: solid black 5px;
-  border-radius: 10px /50%; */
-  /* border-style: groove; */
-  /* border-width: 5px; */
-
-  /* changing the form */
 .submitForm{
   font-size:30px;
   margin: auto;
@@ -142,48 +123,49 @@ input[type=submit] {
 
 
 .menuLeft{
-align-items: center;
-color: rgb(0,0,0);
 display:flex;
-font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
-font-size:16px;
+align-items: center;
 justify-content:flex-start;
 width:70px;
 height:27.5px;
+
+font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
+font-size:16px;
+color: rgb(0,0,0);
+
 }
 
-.menuLeft{
-  
-  color: rgb(0,0,0);
+.menuRight{
   display:flex;
-  font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
-  font-size:16px;
   justify-content:center;
   width:70px;
   height:27.5px;
   align-items:center;
+
+  color: rgb(0,0,0);
+  font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
+  font-size:16px;
+  
   }
 
   header{
+
+/* display position */
 align-items:center;
 display:flex;
 flex-direction:row;
 flex-wrap:nowrap;
 height:50px;
 justify-content: space-between;
-padding-left:16px;
-padding-right:16px;
-width:630px;
+
+
+/* styling */
 font-family: "Clear Sans",'Helvetica Neue', Arial, sans-serif;
 font-size: 16px;
 color:rgb(0,0,0);
 border-bottom-color:rgb(211,214,218);
 border-bottom-style:solid;
-border-bottom-width:1px;
-/* margin:0px; */
-margin-top: 0;
-margin-left:0;
-
+border-bottom-width: 1px;
 
   }
 
@@ -234,19 +216,20 @@ cursor :pointer;
 }
 
 #helpButton{
+
   align-item:flex-start;
   box-sizing:border-box;
   display:block;
   height: 27.5px;
-  padding-left: 4px;
-  padding-right:4px;
-  padding-top:0px;
+  padding: 0px 4px 0px 4px;
   width:32px;
   font-family:Arial;
   font-size:13.33px;
   font-stretch:100%;
   font-weight:400;
   text-align:center;
+
+  /* styling */
   color: rbg(0,0,0);
   background-attachment:scroll;
   background-clip:border-box;
@@ -282,7 +265,7 @@ cursor :pointer;
   #settingButton{
     align-item:flex-start;
     box-sizing:border-box;
-    display:block;
+    display: block;
     height: 22.5px;
     padding-left: 4px;
     padding-right:4px;
@@ -301,6 +284,8 @@ cursor :pointer;
     background-origin: padding-box;
     background-position-x: 0%;
     background-position-y: 0%;
+
+
     /* background-repeat-x
     background-repeat-y */
     background-size: auto;
@@ -322,4 +307,8 @@ cursor :pointer;
     border-top-style: none;
     border-top-width: 0px;
     cursor :pointer;
+    }
+
+    .title {
+      font-size: 20px;
     }
