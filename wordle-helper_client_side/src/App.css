@@ -180,7 +180,7 @@ input[type=submit] {
 
 
 
-/* navigation bar */
+/* navigation bar and the containers they're in */
 
 .menuLeft{
 display:flex;
